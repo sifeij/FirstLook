@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "dnxcore50": {
+      "bin": {
+        "assembly": "../../artifacts/bin/FirstLookLibrary/Debug/dotnet/FirstLookLibrary.dll",
+        "pdb": "../../artifacts/bin/FirstLookLibrary/Debug/dotnet/FirstLookLibrary.pdb"
+      }
+    }
+  }
+}

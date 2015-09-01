@@ -2670,53 +2670,6 @@
           "lib/dotnet/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Data.Edm/5.6.0": {},
-      "Microsoft.Data.OData/5.6.0": {
-        "dependencies": {
-          "System.Spatial": "[5.6.0]",
-          "Microsoft.Data.Edm": "[5.6.0]"
-        }
-      },
-      "Microsoft.Data.Services.Client/5.6.0": {
-        "dependencies": {
-          "Microsoft.Data.OData": "[5.6.0]"
-        },
-        "compile": {
-          "lib/portable-net45+sl5+wp8+win8/Microsoft.Data.Services.Client.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+sl5+wp8+win8/Microsoft.Data.Services.Client.Portable.dll": {}
-        },
-        "resource": {
-          "lib/portable-net45+sl5+wp8+win8/de/Microsoft.Data.Services.Client.Portable.resources.dll": {
-            "locale": "de"
-          },
-          "lib/portable-net45+sl5+wp8+win8/es/Microsoft.Data.Services.Client.Portable.resources.dll": {
-            "locale": "es"
-          },
-          "lib/portable-net45+sl5+wp8+win8/fr/Microsoft.Data.Services.Client.Portable.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/portable-net45+sl5+wp8+win8/it/Microsoft.Data.Services.Client.Portable.resources.dll": {
-            "locale": "it"
-          },
-          "lib/portable-net45+sl5+wp8+win8/ja/Microsoft.Data.Services.Client.Portable.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/portable-net45+sl5+wp8+win8/ko/Microsoft.Data.Services.Client.Portable.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/portable-net45+sl5+wp8+win8/ru/Microsoft.Data.Services.Client.Portable.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/portable-net45+sl5+wp8+win8/zh-Hans/Microsoft.Data.Services.Client.Portable.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/portable-net45+sl5+wp8+win8/zh-Hant/Microsoft.Data.Services.Client.Portable.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
       "Microsoft.Framework.Caching.Abstractions/1.0.0-beta5": {
         "dependencies": {
           "System.Collections": "4.0.10-beta-23019",
@@ -3178,7 +3131,6 @@
           "lib/DNXCore50/Microsoft.Win32.Registry.dll": {}
         }
       },
-      "Microsoft.WindowsAzure.ConfigurationManager/1.8.0.0": {},
       "Newtonsoft.Json/6.0.6": {
         "compile": {
           "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll": {}
@@ -4220,7 +4172,6 @@
           "lib/DNXCore50/System.Security.SecureString.dll": {}
         }
       },
-      "System.Spatial/5.6.0": {},
       "System.Text.Encoding/4.0.10-beta-23019": {
         "dependencies": {
           "System.Runtime": "4.0.0-beta-23019"
@@ -4411,14 +4362,6 @@
         },
         "runtime": {
           "lib/dotnet/System.Xml.XDocument.dll": {}
-        }
-      },
-      "WindowsAzure.Storage/3.0.1.0": {
-        "dependencies": {
-          "Microsoft.Data.OData": "5.6.0",
-          "Newtonsoft.Json": "5.0.6",
-          "Microsoft.Data.Services.Client": "5.6.0",
-          "Microsoft.WindowsAzure.ConfigurationManager": "1.8.0.0"
         }
       }
     }
@@ -6894,7 +6837,6 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "WindowsAzure.Storage >= 3.0.1",
       "EntityFramework.SqlServer >= 7.0.0-beta5",
       "EntityFramework.Commands >= 7.0.0-beta5",
       "Microsoft.AspNet.Mvc >= 6.0.0-beta5",
@@ -6918,7 +6860,9 @@
       "Microsoft.Framework.Logging.Console >= 1.0.0-beta5",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-beta5"
     ],
-    "DNX,Version=v4.5.1": [],
+    "DNX,Version=v4.5.1": [
+      "WindowsAzure.Storage >= 3.0.1"
+    ],
     "DNXCore,Version=v5.0": []
   }
 }

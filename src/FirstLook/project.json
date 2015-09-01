@@ -3,8 +3,7 @@
   "userSecretsId": "aspnet5-FirstLook-2a71d34a-dab0-49f0-9dee-3d19401f5171",
   "version": "1.0.0-*",
 
-  "dependencies": {    
-    "WindowsAzure.Storage": "3.0.1",
+  "dependencies": {
     "EntityFramework.SqlServer": "7.0.0-beta5",
     "EntityFramework.Commands": "7.0.0-beta5",
     "Microsoft.AspNet.Mvc": "6.0.0-beta5",
@@ -35,8 +34,13 @@
   },
 
   "frameworks": {
-    "dnx451": { },
-    "dnxcore50": { }
+    "dnx451": {
+      "dependencies": {
+        "WindowsAzure.Storage": "3.0.1"
+      }
+    },
+    "dnxcore50": {
+    }
   },
 
   "exclude": [
