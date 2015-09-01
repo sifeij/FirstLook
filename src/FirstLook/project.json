@@ -40,6 +40,8 @@
       }
     },
     "dnxcore50": {
+      "dependencies": {
+      }
     }
   },
 
