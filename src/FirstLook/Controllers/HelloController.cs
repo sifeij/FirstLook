@@ -1,4 +1,5 @@
 using Microsoft.AspNet.Mvc;
+using System.Reflection;
 
 namespace FirstLook.Controllers
 {
@@ -6,7 +7,13 @@ namespace FirstLook.Controllers
 	{
 		public string Index()
 		{
-			return "Hello, World!";
-		}
-	}
+#if DNX451
+            return Assembly.GetExecutingAssembly().FullName;
+#endif
+
+#if DNXCORE50
+            return typeof(HelloController).AssemblyQualifiedName;
+#endif
+        }
+    }
 }
