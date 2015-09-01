@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "FirstLook"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-FirstLook-2a71d34a-dab0-49f0-9dee-3d19401f5171;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}
